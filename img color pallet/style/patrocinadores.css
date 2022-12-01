@@ -1,0 +1,304 @@
+/* patrocinadores */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    font-family: 'Bahnschrift', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: #ffff;
+}
+
+header{
+    position: sticky;
+}
+
+/* HEADER */
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: #fff;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+    font-weight: bold;;
+}
+
+header nav ul img {
+    height: 60px;
+}   
+
+header nav ul li {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #000000;
+}
+
+.hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff112;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.slide {
+    background-color: #b8ad0e;
+    width: 100%;
+    height: 450px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.hr1{
+    margin:60px ;
+     width:94%;
+    background-color: #fff112;
+    height: 8px;
+    border: 0;
+ }
+
+ .SESI{
+width:350px;
+    margin-top: 100px;
+}
+
+ .SESIpatrocinio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 100px;
+ }
+
+ .SESIpatrocinio button {
+    margin: 60px;
+    border-radius: 90px;
+    font-size: 16px;
+    font-weight: bolder;
+    padding: 8px;
+
+ }
+ button{
+    margin: 40px;
+    border-radius: 90px;
+    font-size: 16px;
+    font-weight: bolder;
+    background-color: transparent;
+    padding: 8px;
+ }
+ button:hover{
+    cursor: pointer;
+    background-color: #000000;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+ }
+
+ .hr2{
+    width:94%;
+   background-color: #C0C0C0;
+   height: 8px;
+   border: 0;
+ }
+
+ .patrocinadorePrata{
+    height: 438px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  
+}
+
+.patrocinadorePrata img {
+    width:200px
+
+
+}
+
+.prata1,.prata2,.prata3,.prata4{
+    margin: 40px;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+}
+.hr3{
+    margin-top:25px;
+    width:94%;
+   background-color: #cd7f32;
+   height: 8px;
+   border: 0;
+  
+}
+.bronze1,.bronze2,.bronze3{
+    margin: 40px;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+}
+.patrocinadoresBronze{
+    height: 438px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  
+}
+
+.patrocinadoresBronze img {
+    width: 200px;
+}
+
+.borda{
+    width: 668px;
+    height: 330px;
+    background-color: transparent;
+    border:2px solid #fff112;
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+        
+}
+.BordaConteudo{
+    height: 666px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+ 
+}
+.conteudo{
+    width:642px;
+    height:308px;
+    border-radius: 35px;
+    background-color: #fff112;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.btn{
+    background-color:#000;
+    color:#fff
+}
+
+.conteudo button a {
+    color: #000000;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: transparent;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+}
+
+footer{
+    text-align: center;
+    padding: 2rem 0;
+    gap: 1.8rem;
+    width: 100%;
+    background-color: #F5F5F5;
+
+}
+
+footer ul {
+    margin-top: 1.8rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+footer .meio {
+    border-right: 6px solid #fff112 ;
+    border-left: 6px solid #fff112 ;
+
+}
+.footer-right {
+    display: flex;
+    text-align: end;
+}
+.social-medias {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.8rem;
+}
+.social-medias a:hover {
+    filter: contrast(200);
+}
+
+.social-medias img {
+    width: 34px;
+}
+footer ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+@media (max-width:724px) {
+    header .navbar ul li {
+        display: none;
+    }
+    footer ul {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    footer .meio {
+        border: none;
+    }
+}
